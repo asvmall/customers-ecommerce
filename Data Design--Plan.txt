@@ -1,0 +1,73 @@
+Data Design--Plan
+
+1. users
+
+--> (user_id	INT (PK, Auto Increment),	
+    name	VARCHAR,
+    email	VARCHAR,
+    mobile	VARCHAR,
+    password VARCHAR,
+    updated_on DATETIME,
+    created_on	DATETIME,	
+    status	VARCHAR)
+
+2. sellers
+--->(seller_id	INT PK,
+    user_id	INT FK,
+    shop_name	VARCHAR,
+    gst_number	VARCHAR,
+    created_on	DATETIME,
+    status	VARCHAR)
+3. categories
+    -->(category_id	INT PK,
+        category_name	VARCHAR,
+        record_status	VARCHAR)
+4. products
+-->( product_id	INT PK,
+        seller_id	FK,
+        category_id	FK,
+        name	VARCHAR,
+        description	TEXT,
+        price	DECIMAL,
+        quantity	INT,
+        record_status	VARCHAR)
+5. product_media
+    -->( media_id	INT PK,
+        product_id	FK,
+        type	(image, video, pdf, audio, html),
+        url	VARCHAR)
+6. reviews
+    -->( review_id	INT PK,
+        product_id	FK,
+        user_id	FK,
+        rating	INT,
+        comment	TEXT,
+        created_on	DATETIME)
+7. cart
+    -->(cart_id	INT PK,
+    user_id	FK,
+    product_id	FK,
+    quantity	INT,
+    added_on	DATETIME)
+8. wishlist
+    -->(wishlist_id  INT PK ,
+        user_id  FK ,
+        product_id  FK )
+9. orders
+    -->(| order_id  INT PK ,
+ user_id  FK ,
+ total_amount  DECIMAL ,
+ status  pending/paid/shipped/delivered ,
+ created_on  DATETIME )
+10. payment
+    -->(payment_id INT PK ,
+order_id  FK ,
+ amount  DECIMAL ,
+ status  success/failure ,
+payment_mode  upi/card/netbanking ,
+ created_on DATETIME )     
+ 11. banners
+        -->(banner_id  INT PK,
+            title VARCHAR,
+            image_url  VARCHAR,
+            record_status active/inactive)
