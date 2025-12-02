@@ -24,7 +24,9 @@ Reactjs   --> 2hours
     4.  ui --> design  -> 1 hour 
 
 6 hours 
-
-    butt
+  Color code: #1D9232
+  Images: https://www.pexels.com/
+ 
+    
 
 
