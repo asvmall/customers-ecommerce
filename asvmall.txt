@@ -47,7 +47,26 @@ asvmall-v1
         |--> pages 
 
 asvmall-sellers-v1
-       
+  =====================================================================================================     
+02-12-2025   
+ 1. Naresh  --> footer , profile , orders (user id based order list )
+2. aravindh  --> About us
+3. shiva   -->   Registration  and otp ( otpcode , otp_status)  
+                  1. registration   2. otpverify 3. adduser details (name,mobile,address)
+4. navya    --> profile 
+5. manikanta
+6. sravan
+sellers
+  1. muni 
+  2. nirmal
+  3. manjusa
+  4. vastalya ---> 
+  5. mahesh
+  6. deepthi
+
+
+
+
 
 
 
