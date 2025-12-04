@@ -1,0 +1,144 @@
+/* Basic centered page */
+.profile-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f3f4f6;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Top row with avatar + name */
+.card-top {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #e6e6e6;
+  flex-shrink: 0;
+}
+
+/* name block */
+.name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+.role {
+  margin: 4px 0 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Info rows */
+.info {
+  margin-top: 8px;
+  border-top: 1px solid #eef2f7;
+  padding-top: 12px;
+}
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+.label {
+  color: #6b7280;
+  font-size: 13px;
+}
+.value {
+  color: #111827;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: right;
+}
+
+/* Actions */
+.card-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+.btn {
+  background: linear-gradient(180deg, #1f6feb, #1b58d6);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(27, 88, 214, 0.18);
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Loading shimmer */
+.card-loading {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.shimmer {
+  background: linear-gradient(90deg, #eee 25%, #f6f6f6 37%, #eee 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
+  border-radius: 8px;
+}
+.shimmer.line {
+  height: 12px;
+  width: 80%;
+}
+.shimmer.line.short {
+  width: 40%;
+}
+.shimmer.line.medium {
+  width: 60%;
+}
+.shimmer.line.long {
+  width: 80%;
+}
+.shimmer.avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 12px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Error */
+.error {
+  color: #b91c1c;
+  text-align: center;
+  padding: 12px 0;
+}
