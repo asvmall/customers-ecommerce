@@ -26,6 +26,18 @@ Reactjs   --> 2hours
 6 hours 
   Color code: #1D9232
   Images: https://www.pexels.com/
+
+
+1. Open GitHub Desktop
+2. Clone/Open repository
+3. Make code changes in editor
+4. GitHub Desktop shows detected changes
+5. Select files to include in commit
+6. Add commit summary & description
+7. Commit to local branch
+8. Push origin to upload to GitHub
+9. Verify commit on GitHub.com
+
  
     
 
