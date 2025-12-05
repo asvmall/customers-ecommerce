@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Banner from './components/banners';
 import AboutUs from "./pages/AboutUs";
-
 function App() {
   return (
     <BrowserRouter>
