@@ -8,7 +8,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
 @Entity
 @Table(name="categories")
 public class CategoriesEntity {
@@ -66,7 +65,5 @@ public class CategoriesEntity {
 	}
 	public void setCreated_at(LocalDateTime created_at) {
 		this.created_at = created_at;
-	}
-	
-
+	}	
 }
